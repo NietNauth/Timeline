@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our 3-Month Anniversary ❤️</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for romantic icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Heart & Sparkle Particle Canvas Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Ambient Glowing Orbs -->
+    <div class="glowing-orb orb-1"></div>
+    <div class="glowing-orb orb-2"></div>
+
+
+
+    <!-- Main Container -->
+    <main class="container">
+        
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <div class="hero-card">
+                <div class="hero-image-wrapper">
+                    <img src="assets/1.jpg" alt="Couple under fairylights" class="hero-img">
+                    <div class="hero-overlay"></div>
+                </div>
+                <div class="hero-content">
+                    <div class="badge"><i class="fas fa-heartbeat"></i> 3-Month Anniversary</div>
+                    <h1 class="romantic-title">3-Month Anniversary</h1>
+                    
+                    <!-- Countdown Timer -->
+                    <div class="countdown-wrapper">
+                        <div class="countdown-title">Thời gian đếm ngược đến giờ hẹn hò:</div>
+                        <div class="countdown" id="countdown">
+                            <div class="countdown-item">
+                                <span id="days">00</span>
+                                <label>ngày</label>
+                            </div>
+                            <div class="countdown-divider">:</div>
+                            <div class="countdown-item">
+                                <span id="hours">00</span>
+                                <label>giờ</label>
+                            </div>
+                            <div class="countdown-divider">:</div>
+                            <div class="countdown-item">
+                                <span id="minutes">00</span>
+                                <label>phút</label>
+                            </div>
+                            <div class="countdown-divider">:</div>
+                            <div class="countdown-item">
+                                <span id="seconds">00</span>
+                                <label>giây</label>
+                            </div>
+                        </div>
+                        <div id="countdownMsg" class="countdown-message">Đang chờ đợi khoảnh khắc gặp em... ✨</div>
+                    </div>
+                    
+                    <!-- Scroll Indicator -->
+                    <div class="scroll-down">
+                        <span>Khám phá lịch trình</span>
+                        <i class="fas fa-chevron-down scroll-arrow"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Timeline Section -->
+        <section class="timeline-section">
+            <h2 class="section-title">Lịch Trình Chi Tiết</h2>
+
+            <div class="timeline-container">
+                <!-- Glowing timeline path -->
+                <div class="timeline-line">
+                    <div class="timeline-progress" id="timelineProgress"></div>
+                </div>
+
+                <!-- Step 1 -->
+                <div class="timeline-item" id="step-1">
+                    <div class="timeline-dot"><i class="fas fa-motorcycle"></i></div>
+                    <div class="timeline-card glass">
+                        <div class="card-header">
+                            <span class="card-time"><i class="far fa-clock"></i> 18:30</span>
+                            <span class="card-tag">Bắt đầu</span>
+                        </div>
+                        <h3 class="card-title">Đón Em Yêu ❤️</h3>
+                        <p class="card-description">Anh sẽ qua đón em tại nhà. Hãy chuẩn bị một tâm hồn đẹp và một bộ đồ thật xinh xắn để đi cùng tui hengg</p>
+                        
+                        <div class="polaroid-frame">
+                            <div class="polaroid-inner">
+                                <div class="polaroid-img-container">
+                                    <img src="assets/step1_pickup.png" alt="Đón Em Yêu" class="polaroid-preview">
+                                </div>
+                                <div class="polaroid-caption">Đi thôi bé iu! 🛵</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-item" id="step-2">
+                    <div class="timeline-dot"><i class="fas fa-camera-retro"></i></div>
+                    <div class="timeline-card glass">
+                        <div class="card-header">
+                            <span class="card-time"><i class="far fa-clock"></i> 18:45 - 19:20</span>
+                            <span class="card-tag">Kỷ niệm</span>
+                        </div>
+                        <h3 class="card-title">Chụp Ảnh Tại Linh Linh Photobooth 📸</h3>
+                        <p class="card-description">Gô gô <strong>49 Chùa Bộc</strong> để chụp Photobooth thuii.</p>
+                        
+                        <div class="location-link">
+                            <a href="https://maps.google.com/?q=49+Chùa+Bộc,+Hà+Nội" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-map-marker-alt"></i> Xem bản đồ: 49 Chùa Bộc, Đống Đa
+                            </a>
+                        </div>
+
+                        <div class="polaroid-frame">
+                            <div class="polaroid-inner">
+                                <div class="polaroid-img-container">
+                                    <img src="assets/step2_photobooth.png" alt="Chụp Ảnh Photobooth" class="polaroid-preview">
+                                </div>
+                                <div class="polaroid-caption">Say Cheeese! 📸</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-item" id="step-3">
+                    <div class="timeline-dot"><i class="fas fa-utensils"></i></div>
+                    <div class="timeline-card glass">
+                        <div class="card-header">
+                            <span class="card-time"><i class="far fa-clock"></i> 19:30 - 20:50</span>
+                            <span class="card-tag">Ẩm thực</span>
+                        </div>
+                        <h3 class="card-title">Ăn Tối Tại Gent Steak 🥩</h3>
+                        <p class="card-description">Nàm tí sang trọng ở <strong>79 Hoàng Cầu</strong>. Vừa ăn vừa deeptalk tí nhể :))))</p>
+                        
+                        <div class="location-link">
+                            <a href="https://maps.google.com/?q=Gent+Steak+79+Hoàng+Cầu,+Hà+Nội" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-map-marker-alt"></i> Xem bản đồ: 79 Hoàng Cầu, Chợ Dừa
+                            </a>
+                        </div>
+
+                        <div class="polaroid-frame">
+                            <div class="polaroid-inner">
+                                <div class="polaroid-img-container">
+                                    <img src="assets/step3_dinner.png" alt="Ăn Tối Steak" class="polaroid-preview">
+                                </div>
+                                <div class="polaroid-caption">Măm măm thôi! 🥩</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-item" id="step-4">
+                    <div class="timeline-dot"><i class="fas fa-ring"></i></div>
+                    <div class="timeline-card glass">
+                        <div class="card-header">
+                            <span class="card-time"><i class="far fa-clock"></i> 21:00 - 22:00</span>
+                            <span class="card-tag">Trải nghiệm</span>
+                        </div>
+                        <h3 class="card-title">Workshop De'Amor Workshop 💍</h3>
+                        <p class="card-description">Gô tiếp <strong>Số 1 Đặng Văn Ngữ</strong>. Workshop tăng tình cảm tí nhể </p>
+                        
+                        <div class="location-link">
+                            <a href="https://maps.google.com/?q=De+Amor+Workshop+Số+1+Đặng+Văn+Ngữ,+Hà+Nội" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-map-marker-alt"></i> Xem bản đồ: Số 1 Đặng Văn Ngữ
+                            </a>
+                        </div>
+
+                        <div class="polaroid-frame">
+                            <div class="polaroid-inner">
+                                <div class="polaroid-img-container">
+                                    <img src="assets/step4_workshop.png" alt="Workshop Vòng Tay" class="polaroid-preview">
+                                </div>
+                                <div class="polaroid-caption">Làm vòng đôi 💍</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="timeline-item" id="step-5">
+                    <div class="timeline-dot"><i class="fas fa-coffee"></i></div>
+                    <div class="timeline-card glass">
+                        <div class="card-header">
+                            <span class="card-time"><i class="far fa-clock"></i> 22:00 - 22:45</span>
+                            <span class="card-tag">Tâm sự</span>
+                        </div>
+                        <h3 class="card-title">Cafe Ấm Áp & Tặng Quà ☕</h3>
+                        <p class="card-description">Deep talk tiếp hengg :))))</p>
+
+                        <div class="polaroid-frame">
+                            <div class="polaroid-inner">
+                                <div class="polaroid-img-container">
+                                    <img src="assets/step5_cafe.png" alt="Cafe và Quà" class="polaroid-preview">
+                                </div>
+                                <div class="polaroid-caption">Tâm sự ngọt ngào ☕</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="timeline-item" id="step-6">
+                    <div class="timeline-dot"><i class="fas fa-moon"></i></div>
+                    <div class="timeline-card glass">
+                        <div class="card-header">
+                            <span class="card-time"><i class="far fa-clock"></i> 22:45 - 23:00</span>
+                            <span class="card-tag">Kết thúc</span>
+                        </div>
+                        <h3 class="card-title">Đưa Em Về Nhà Trong Bình Yên 🌙</h3>
+                        <p class="card-description">Đưa vịu ơ zề enzimmm :))))) .</p>
+
+                        <div class="polaroid-frame">
+                            <div class="polaroid-inner">
+                                <div class="polaroid-img-container">
+                                    <img src="assets/step6_home.png" alt="Về nhà" class="polaroid-preview">
+                                </div>
+                                <div class="polaroid-caption">Chúc ngủ ngon nha! 🌙</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Secret Letter Section -->
+        <section class="secret-section">
+            <h2 class="section-title">Thư Gửi Em Yêu</h2>
+            
+            <div class="envelope-wrapper">
+                <div class="envelope" id="envelope">
+                    <div class="flap"></div>
+                    <div class="pocket"></div>
+                    <div class="letter-preview" id="letter">
+                        <div class="letter-content">
+                            <h3 class="letter-title">Gửi Em Béeeee ❤️</h3>
+                            <div class="letter-text" id="typewriterText">
+                                <!-- Written via typing script -->
+                            </div>
+                            <div class="letter-signature">Yêu em nhìuuuu, <br><span class="signature-name">Anh iuuu</span></div>
+                        </div>
+                    </div>
+                    <div class="wax-seal" id="waxSeal">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- RSVP Button -->
+            <div class="rsvp-container hidden" id="rsvpContainer">
+                <p class="rsvp-question">Em đồng ý đi hẹn hò cùng anh chứ? 🥰</p>
+                <div class="rsvp-actions">
+                    <button class="rsvp-btn yes-btn" id="btnYes"><i class="fas fa-check"></i> Em đồng ý luôn! ❤️</button>
+                    <button class="rsvp-btn no-btn" id="btnNo">Không, dỗi rồi 😜</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>Created with ❤️ by NietNauth | Dành tặng cho em người tuyệt vời nhất</p>
+    </footer>
+
+    <!-- Canvas Confetti Library via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
