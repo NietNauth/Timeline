@@ -241,7 +241,7 @@ function initEnvelopeAndRSVP() {
     
     let isOpened = false;
     
-    const letterMessage = `Gửi embee của anh,\n\nHôm nay anh đã lên một lịch trình thật chi tiết và đặc biệt dành riêng cho hai đứa mình.\n\nHy vọng bạn sẽ thích buổi tối hẹn hò này nhé! Hẹn gặp bạn vào lúc 18:30 Chủ Nhật 7 tháng 6 nhenn!`;
+    const letterMessage = `Gửi embee của anh,\n\nHôm nay anh đã lên một lịch trình thật chi tiết và đặc biệt dành riêng cho hai đứa mình.\n\nHy vọng ebeee sẽ thích ạ! Hẹn gặp ebee vào lúc 18:30 Chủ Nhật 7 tháng 6 nhenn!`;
     
     function startTypewriter() {
         let i = 0;
